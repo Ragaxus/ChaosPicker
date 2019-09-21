@@ -1,15 +1,50 @@
 <html>
     <head>
         <script src="makeManabase.js"></script>
+        <title>Math is for blockers.</title>
     </head>
-    <body>
-        Number of lands: <input type="number" name="numLands">
-        Format: <p>
-            <input type="radio" name="format" value="future"> Future Standard
-            <input type="radio" name="format" value="standard"> Standard
-        </p>
-        <button type="button" onclick="makeManabase()">Drop the 'base</button>
-        <br>
-        <div id="results"></div>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+    <body class="w3-light-grey">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+                            <div class="w3-container">
+                                <div class="w3-padding-16">
+                                    Number of lands: <input type="number" name="numLands">
+                                </div>
+                                Format: <p>
+                                <div class="vertical-radio-buttons">
+                                    <div>
+                                        <span>
+                                            <input type="radio" name="format" value="future"> <label for="future">Future Standard</label>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <input type="radio" name="format" value="standard"> <label for="standard">Standard</label>
+                                        </span>
+                                    </div>
+                                </div>
+                                </p>
+                                <div class="w3-padding-16">
+                                    <button type="button" onclick="makeManabase()">Drop the 'base</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="w3-twothird"> 
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <div class="w3-container" id="results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

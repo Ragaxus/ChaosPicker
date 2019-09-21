@@ -5,7 +5,7 @@ function makeManabase() {
      var manaBase = {};
      for (var i = 0; i < numLands; i++) {
        var availableLands = Object.keys(landBag);
-       nextLandIdx = Math.floor(Math.random() * (availableLands.length+1));
+       nextLandIdx = Math.floor(Math.random() * availableLands.length);
        nextLand = availableLands[nextLandIdx];
        if (nextLand in manaBase) manaBase[nextLand]++;
        else manaBase[nextLand] = 1;
